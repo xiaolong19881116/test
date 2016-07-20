@@ -1,0 +1,13 @@
+1,安装mysysgit
+2,$ ssh-keygen -t rsa -b 4096 -C "******@**.com"  #Generating public/private rsa key pair.
+3,在github上创建账号，并验证邮箱
+4,在github上创建仓库：repository test 
+5,在github上添加 SSH keys 复制 id_rsa.pub 内容
+6,验证是否成功：$ ssh -T git@github.com #提示： Youve successfully authenticated, but GitHub does not provide shell access. 
+7, $ git clone git@github.com:xiaolong19881116/test.git #克隆github库到本地
+8, $ cd test 
+9, 编辑自己的脚本代码，如helloworld.py 
+10,$ git status #查看Untracked files
+11,$ git add helloworld.py #加入缓冲区
+12,$ git commit -m "hello world by python" #提交
+13,$ git push #github上的仓库就会被更新
